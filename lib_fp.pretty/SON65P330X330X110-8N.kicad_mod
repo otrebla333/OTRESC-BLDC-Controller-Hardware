@@ -1,0 +1,113 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SON65P330X330X110-8N
+$EndINDEX
+$MODULE SON65P330X330X110-8N
+Po 0 0 0 15 00000000 00000000 ~~
+Li SON65P330X330X110-8N
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.782364 -2.30941 0.48096 0.48096 0 0.05 N V 21 "SON65P330X330X110-8N"
+T1 -0.476762 2.44911 0.480768 0.480768 0 0.05 N V 21 "VAL**"
+DS -1.65 1.65 1.65 1.65 0.127 24
+DS 1.65 1.65 1.65 -1.65 0.127 24
+DS 1.65 -1.65 -1.65 -1.65 0.127 24
+DS -1.65 -1.65 -1.65 1.65 0.127 24
+DS -1.65 1.4 -1.65 1.65 0.127 21
+DS -1.65 1.65 1.65 1.65 0.127 21
+DS 1.65 1.65 1.65 1.4 0.127 21
+DS -1.65 -1.4 -1.65 -1.65 0.127 21
+DS -1.65 -1.65 1.65 -1.65 0.127 21
+DS 1.65 -1.65 1.65 -1.4 0.127 21
+DS -2.25 -2 2.25 -2 0.05 24
+DS 2.25 -2 2.25 2 0.05 24
+DS 2.25 2 -2.25 2 0.05 24
+DS -2.25 2 -2.25 -2 0.05 24
+DC -2.45 -1.05 -2.4 -1.05 0.1 21
+$PAD
+Sh "4" R 1 0.34 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.45 0.975
+$EndPAD
+$PAD
+Sh "3" R 0.5 0.34 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.7 0.325
+$EndPAD
+$PAD
+Sh "2" R 0.5 0.34 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.7 -0.325
+$EndPAD
+$PAD
+Sh "1" R 0.5 0.34 0 0 1800
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.7 -0.975
+$EndPAD
+$PAD
+Sh "10" R 1.64 0.5 0 0 2700
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.2 -0.325
+$EndPAD
+$PAD
+Sh "8" R 0.8 0.34 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 -0.975
+$EndPAD
+$PAD
+Sh "7" R 0.8 0.34 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 -0.325
+$EndPAD
+$PAD
+Sh "6" R 0.8 0.34 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 0.325
+$EndPAD
+$PAD
+Sh "5" R 0.8 0.34 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.55 0.975
+$EndPAD
+$PAD
+Sh "9" R 2.29 1.71 0 0 2700
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.295 0
+$EndPAD
+$EndMODULE SON65P330X330X110-8N

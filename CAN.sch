@@ -1,0 +1,200 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BLDC002-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TCAN332D U11
+U 1 1 5AF8F6B5
+P 5800 4300
+F 0 "U11" H 5800 4200 60  0000 C CNN
+F 1 "TCAN332D" H 5800 4300 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-8" H 5800 4300 60  0001 C CNN
+F 3 "" H 5800 4300 60  0001 C CNN
+	1    5800 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6300 4000
+NoConn ~ 6300 4100
+$Comp
+L R R25
+U 1 1 5AF8F7BE
+P 6850 3650
+F 0 "R25" V 6930 3650 50  0000 C CNN
+F 1 "62" V 6850 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6780 3650 50  0001 C CNN
+F 3 "" H 6850 3650 50  0001 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 5AF8F83F
+P 6850 4050
+F 0 "R26" V 6930 4050 50  0000 C CNN
+F 1 "62" V 6850 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6780 4050 50  0001 C CNN
+F 3 "" H 6850 4050 50  0001 C CNN
+	1    6850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C25
+U 1 1 5AF8F89C
+P 7050 3850
+F 0 "C25" H 7075 3950 50  0000 L CNN
+F 1 "4.7uF" V 6950 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7088 3700 50  0001 C CNN
+F 3 "" H 7050 3850 50  0001 C CNN
+	1    7050 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3850 7300 3850
+Wire Wire Line
+	7300 3850 7300 3900
+Wire Wire Line
+	6850 3800 6850 3900
+Wire Wire Line
+	6850 3850 6900 3850
+Connection ~ 6850 3850
+Wire Wire Line
+	6300 3900 6550 3900
+Wire Wire Line
+	6550 3900 6550 4200
+Wire Wire Line
+	6550 4200 7550 4200
+Wire Wire Line
+	7550 4200 7550 3900
+Wire Wire Line
+	7550 3900 7800 3900
+Connection ~ 6850 4200
+Wire Wire Line
+	6300 3800 6550 3800
+Wire Wire Line
+	6550 3800 6550 3500
+Wire Wire Line
+	6550 3500 7550 3500
+Wire Wire Line
+	7550 3500 7550 3800
+Wire Wire Line
+	7550 3800 7800 3800
+Connection ~ 6850 3500
+$Comp
+L GNDD #PWR052
+U 1 1 5AF8F949
+P 7300 3900
+F 0 "#PWR052" H 7300 3650 50  0001 C CNN
+F 1 "GNDD" H 7300 3775 50  0000 C CNN
+F 2 "" H 7300 3900 50  0001 C CNN
+F 3 "" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 7800 3800 2    60   Input ~ 0
+CANH
+Text HLabel 7800 3900 2    60   Input ~ 0
+CANL
+Wire Wire Line
+	5300 4100 5100 4100
+Wire Wire Line
+	5100 4100 5100 4200
+Wire Wire Line
+	4700 3800 5300 3800
+$Comp
+L GNDD #PWR053
+U 1 1 5AF8FA39
+P 5100 4200
+F 0 "#PWR053" H 5100 3950 50  0001 C CNN
+F 1 "GNDD" H 5100 4075 50  0000 C CNN
+F 2 "" H 5100 4200 50  0001 C CNN
+F 3 "" H 5100 4200 50  0001 C CNN
+	1    5100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR054
+U 1 1 5AF8FA55
+P 4700 3700
+F 0 "#PWR054" H 4700 3550 50  0001 C CNN
+F 1 "+3.3V" H 4700 3840 50  0000 C CNN
+F 2 "" H 4700 3700 50  0001 C CNN
+F 3 "" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 5300 4000 0    60   Input ~ 0
+TX
+Text HLabel 5300 3900 0    60   Input ~ 0
+RX
+$Comp
+L C C24
+U 1 1 5AF8FAB6
+P 4700 3950
+F 0 "C24" H 4725 4050 50  0000 L CNN
+F 1 "100nF" H 4450 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4738 3800 50  0001 C CNN
+F 3 "" H 4700 3950 50  0001 C CNN
+	1    4700 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDD #PWR055
+U 1 1 5AF8FAFF
+P 4700 4150
+F 0 "#PWR055" H 4700 3900 50  0001 C CNN
+F 1 "GNDD" H 4700 4025 50  0000 C CNN
+F 2 "" H 4700 4150 50  0001 C CNN
+F 3 "" H 4700 4150 50  0001 C CNN
+	1    4700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4150 4700 4100
+Wire Wire Line
+	4700 3800 4700 3700
+Connection ~ 4700 3800
+$EndSCHEMATC

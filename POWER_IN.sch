@@ -1,0 +1,184 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BLDC002-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TS3480C U10
+U 1 1 5AFA6C1E
+P 5650 4250
+F 0 "U10" H 5350 4400 60  0000 C CNN
+F 1 "TS3480C" H 5650 4850 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5650 4250 60  0001 C CNN
+F 3 "" H 5650 4250 60  0001 C CNN
+	1    5650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR046
+U 1 1 5AFA6D41
+P 5650 4450
+F 0 "#PWR046" H 5650 4250 50  0001 C CNN
+F 1 "GNDPWR" H 5650 4320 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR047
+U 1 1 5AFA6D60
+P 4400 3550
+F 0 "#PWR047" H 4400 3400 50  0001 C CNN
+F 1 "+BATT" H 4400 3690 50  0000 C CNN
+F 2 "" H 4400 3550 50  0001 C CNN
+F 3 "" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C22
+U 1 1 5AFA6D82
+P 5000 4150
+F 0 "C22" H 5025 4250 50  0000 L CNN
+F 1 "100nF" H 5025 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5038 4000 50  0001 C CNN
+F 3 "" H 5000 4150 50  0001 C CNN
+	1    5000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C21
+U 1 1 5AFA6E09
+P 4650 4150
+F 0 "C21" H 4675 4250 50  0000 L CNN
+F 1 "10uF" H 4675 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4688 4000 50  0001 C CNN
+F 3 "" H 4650 4150 50  0001 C CNN
+	1    4650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR048
+U 1 1 5AFA77F4
+P 5000 4350
+F 0 "#PWR048" H 5000 4150 50  0001 C CNN
+F 1 "GNDPWR" H 5000 4220 50  0000 C CNN
+F 2 "" H 5000 4300 50  0001 C CNN
+F 3 "" H 5000 4300 50  0001 C CNN
+	1    5000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR049
+U 1 1 5AFA7808
+P 4650 4350
+F 0 "#PWR049" H 4650 4150 50  0001 C CNN
+F 1 "GNDPWR" H 4650 4220 50  0000 C CNN
+F 2 "" H 4650 4300 50  0001 C CNN
+F 3 "" H 4650 4300 50  0001 C CNN
+	1    4650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C23
+U 1 1 5AFA785B
+P 6200 4150
+F 0 "C23" H 6225 4250 50  0000 L CNN
+F 1 "100nF" H 6225 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6238 4000 50  0001 C CNN
+F 3 "" H 6200 4150 50  0001 C CNN
+	1    6200 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4450 5650 4350
+Wire Wire Line
+	4400 3900 5250 3900
+Wire Wire Line
+	4400 3550 4400 3900
+Wire Wire Line
+	4650 4350 4650 4300
+Wire Wire Line
+	4650 4000 4650 3900
+Connection ~ 4650 3900
+Wire Wire Line
+	5000 4000 5000 3900
+Connection ~ 5000 3900
+Wire Wire Line
+	5000 4350 5000 4300
+Wire Wire Line
+	6050 3900 6600 3900
+Wire Wire Line
+	6200 3900 6200 4000
+Wire Wire Line
+	6600 3900 6600 3550
+Connection ~ 6200 3900
+$Comp
+L +3.3V #PWR050
+U 1 1 5AFA7998
+P 6600 3550
+F 0 "#PWR050" H 6600 3400 50  0001 C CNN
+F 1 "+3.3V" H 6600 3690 50  0000 C CNN
+F 2 "" H 6600 3550 50  0001 C CNN
+F 3 "" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR051
+U 1 1 5AFA7A64
+P 6200 4350
+F 0 "#PWR051" H 6200 4100 50  0001 C CNN
+F 1 "GNDD" H 6200 4225 50  0000 C CNN
+F 2 "" H 6200 4350 50  0001 C CNN
+F 3 "" H 6200 4350 50  0001 C CNN
+	1    6200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4350 6200 4300
+$EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TS3480C
+D TS3480CX33 RFG -  Regulador de Tensión Fija LDO, 30Vin, 950mV de Caída, 3.3V/100mAout, SOT-23-3 
+K TS3480CX33 RFG, SOT-23-3, SOT-23, LDO, 3.3V, 3.3
+F http://www.farnell.com/datasheets/2044608.pdf?_ga=2.33180798.1327852342.1525888514-29276770.1516036659
+$ENDCMP
+#
+#End Doc Library

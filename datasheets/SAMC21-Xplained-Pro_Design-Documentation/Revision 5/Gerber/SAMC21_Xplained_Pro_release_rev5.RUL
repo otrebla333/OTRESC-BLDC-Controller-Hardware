@@ -1,0 +1,12 @@
+DRC Rules Export File for PCB: D:\Atmel\Subversion\DevKits\SAMC21_Xplained_Pro\06_Hardware\Rev3\SAMC21_Xplained_Pro.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_EDBG|Scope=Board|Minimum=4.69
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=3.94
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskTenting|Scope=Board|Minimum=-39.37
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=4.92
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.32
+RuleKind=Clearance|RuleName=Clearance_Poly|Scope=Board|Minimum=6.89
+RuleKind=Clearance|RuleName=Clearance_Poly_Impedance|Scope=Board|Minimum=23.62
+RuleKind=Clearance|RuleName=Clearance_touch|Scope=Board|Minimum=23.62
+RuleKind=Clearance|RuleName=Schematic Clearance Touch|Scope=Board|Minimum=23.62
